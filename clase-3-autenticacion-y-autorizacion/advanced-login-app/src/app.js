@@ -4,6 +4,9 @@ import session from "express-session";
 import mongoose from "mongoose";
 import MongoStore from "connect-mongo"
 
+import passport from "passport";
+import initializePassport from "./config/passport.config.js";
+
 import config from "./config/index.js";
 import sessionRouter from "./routes/session.router.js";
 import userRouter from "./routes/user.router.js";
@@ -37,6 +40,9 @@ app.use(session({
     maxAge: 2 * 60 * 60 * 1000
   }
 }))
+initializePassport();
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Routes
 app.use("/", viewsRouter);
