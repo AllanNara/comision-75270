@@ -8,7 +8,6 @@ router.post("/register", async(req, res) => {
   if(!first_name || !email || !password) return res.status(400).send("Missing fields")
   const newUser = { first_name, last_name, email, age, password, avatar };
   const response = await userModel.create(newUser)
-  console.log({ user: response })
   res.send({ status: "success", message: "User created" })
 })
 
