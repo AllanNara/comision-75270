@@ -1,0 +1,30 @@
+<form method="POST" action="/api/session/register">
+  <label>
+    First name:
+    <input type="text" name="first_name" placeholder="jane" />
+  </label>
+  <br />
+  <label>
+    Last name:
+    <input type="text" name="last_name" placeholder="doe" />
+  </label>
+  <br />
+  <label>
+    Age:
+    <input type="number" name="age" placeholder="26" />
+  </label>
+  <br />
+  <label>
+    Email:
+    <input type="email" name="email" placeholder="example@mail.com" value=""/>
+  </label>
+  <br />
+  <label>
+    Password:
+    <input type="password" name="password" placeholder="********" value=""/>
+  </label>
+  <br />
+  <input type="submit" value="Login" />
+</form>
+
+<p>Already have account? <a href="/login">Login!</a></p>
