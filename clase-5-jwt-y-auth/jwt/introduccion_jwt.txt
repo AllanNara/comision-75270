@@ -1,0 +1,7 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hcnRpbiIsImlzQWRtaW4iOmZhbHNlLCJlbWFpbCI6Im1hcmluQG1haWwuY28ifQ.FHvY-EN6LgQxfvpMSt9w4mWacaSGm9LQ95tBvcwh-AA
+
+<header> . <payload> . <signature>
+                          |
+                          |_ HMAC-SHA
+
+
