@@ -1,0 +1,16 @@
+1. Separar responsabilidades con una Arquitectura por Capas
+Router -> Controller -> Service -> Repository -> DAO
+
+2. Implementar DTOs de usuarios y otros si lo considera necesario
+
+3. Recuperación de contraseña utilizando Nodemailer para el envio de link de recuperación
+
+4. Middleware de Autorización donde:
+ - Solo el administrador podra crear, eliminar, y actualizar productos.
+ - Solo el usuario podra agregar productos a su carrito
+
+
+5. Crear modelo y logica de Ticket, y ruta /checkout para cerrar compra:
+ - Debe existir el modleo Ticket
+ - Deben construir logica de creado de ticket, eliminando los productos del carrito y pasarlos a la orden de compra final, con precio total, cantidad de productos, id unico, fecha y hora de compra.
+
